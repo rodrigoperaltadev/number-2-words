@@ -34,6 +34,10 @@
     "type": "git",
     "url": "https://github.com/rodrigoperaltadev/number-2-words"
   },
+  "bugs": {
+    "url": "https://github.com/rodrigoperaltadev/number-2-words/issues"
+  },
+  "homepage": "https://github.com/rodrigoperaltadev/number-2-words#readme",
   "readme": "README.md",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
