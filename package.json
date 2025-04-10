@@ -1,6 +1,6 @@
 {
   "name": "@easii/number-2-words",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Convert numbers into words in English and Spanish",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -32,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodrigoperaltadev/number-2-words"
+    "url": "git+https://github.com/rodrigoperaltadev/number-2-words.git"
   },
   "bugs": {
     "url": "https://github.com/rodrigoperaltadev/number-2-words/issues"
