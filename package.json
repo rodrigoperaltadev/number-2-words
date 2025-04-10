@@ -1,0 +1,44 @@
+{
+  "name": "number-2-words",
+  "version": "1.0.0",
+  "description": "Convert numbers into words in English and Spanish",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "test": "vitest",
+    "lint": "biome check . --write",
+    "format": "biome format . --write"
+  },
+  "keywords": [
+    "numbers",
+    "words",
+    "typescript",
+    "i18n",
+    "localization"
+  ],
+  "author": "Rodrigo Peralta",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigop/number-2-words.git"
+  },
+  "readme": "README.md",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  }
+}
