@@ -1,5 +1,5 @@
 {
-  "name": "number-2-words",
+  "name": "@easii/number-2-words",
   "version": "1.0.0",
   "description": "Convert numbers into words in English and Spanish",
   "main": "./dist/index.js",
