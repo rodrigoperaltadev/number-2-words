@@ -1,8 +1,8 @@
-# number-2-words
+# @easii/number-2-words
 
 Convert numbers into written words in English and Spanish 🇬🇧🇪🇸
 
-> A tiny and fast TypeScript library to translate numbers into natural language.
+> A tiny and fast TypeScript/JavaScript library to translate numbers into natural language.
 
 ---
 
@@ -12,6 +12,7 @@ Convert numbers into written words in English and Spanish 🇬🇧🇪🇸
 - ✅ Handles numbers from `0` up to `999,999,999,999`
 - ✅ Supports **negative numbers**
 - ✅ Strictly typed with **TypeScript**
+- ✅ Compatible with JavaScript (`require` / `import`)
 - ✅ Tiny footprint, no dependencies
 
 ---
@@ -19,18 +20,17 @@ Convert numbers into written words in English and Spanish 🇬🇧🇪🇸
 ## 📦 Installation
 
 ```bash
-npm install number-2-words
+npm install @easii/number-2-words
 # or
-yarn add number-2-words
+yarn add @easii/number-2-words
 ```
 
 ---
 
-## 🔧 Usage
+## 🔧 Usage (TypeScript or modern ESM)
 
 ```ts
-import { toWords } from "number-2-words";
-import { Locale } from "number-2-words/types";
+import { toWords, Locale } from "@easii/number-2-words";
 
 toWords(123, Locale.ENGLISH);
 // → "one hundred twenty-three"
@@ -43,6 +43,27 @@ toWords(-45, Locale.ENGLISH);
 
 toWords(-45, Locale.SPANISH);
 // → "menos cuarenta y cinco"
+```
+
+---
+
+## 📘 Using in JavaScript
+
+### CommonJS (Node.js `require` style)
+
+```js
+const { toWords, Locale } = require("@easii/number-2-words");
+
+console.log(toWords(1000, Locale.ENGLISH)); // one thousand
+console.log(toWords(-21, Locale.SPANISH)); // menos veintiuno
+```
+
+### ESM (`"type": "module"` or `.mjs`)
+
+```js
+import { toWords, Locale } from "@easii/number-2-words";
+
+console.log(toWords(42, Locale.ENGLISH)); // forty-two
 ```
 
 ---
@@ -74,15 +95,6 @@ enum Locale {
 
 ---
 
-## 🧱 Project Structure
-
-- `src/` – core logic
-- `locales/` – per-language converters
-- `types.ts` – shared types
-- `constants.ts` – numeric base constants
-
----
-
 ## ✅ Roadmap
 
 - [x] English 🇬🇧
@@ -96,10 +108,10 @@ enum Locale {
 
 ## 🤝 Contributing
 
-If you want to add a new language or extend features, feel free to open an issue or PR!
+Feel free to fork the repository and submit pull requests.
 
 ---
 
 ## 📄 License
 
-MIT © 2025 – Rodrigo Peralta
+MIT © 2025 – Rodrigo Peralta / Easii
