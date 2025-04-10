@@ -32,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodrigop/number-2-words.git"
+    "url": "https://github.com/rodrigoperaltadev/number-2-words"
   },
   "readme": "README.md",
   "devDependencies": {
