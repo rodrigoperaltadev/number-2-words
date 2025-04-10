@@ -10,3 +10,5 @@ const converters: Record<Locale, LocaleConverter> = {
 export function toWords(num: number, locale: Locale): string {
 	return converters[locale].convert(num)
 }
+
+export { Locale } from './types'
