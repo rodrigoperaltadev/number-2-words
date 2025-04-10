@@ -1,6 +1,6 @@
 {
   "name": "@easii/number-2-words",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert numbers into words in English and Spanish",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
